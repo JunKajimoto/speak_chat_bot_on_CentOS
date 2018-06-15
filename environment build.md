@@ -32,7 +32,8 @@ After the OS installation, let's install the development tools.
 
 - Build virtual environment for Python
 To avoid conflictions between different versions of Python, we need some tools to build a virtual environment for them. Here we use Pyenv. We can download it in https://github.com/pyenv/pyenv/releases. At present, the latest version is v1.2.4. Please download the "Source code(zip)".And then install it. The command you might use is:
-#"cd" to get into download folder
+
+# Firstly "cd" to get into download folder
 
 $unzip pyenv-1.2.4.zip
 
