@@ -33,6 +33,7 @@ After the OS installation, let's install the development tools.
 - Build virtual environment for Python
 To avoid conflictions between different versions of Python, we need some tools to build a virtual environment for them. Here we use Pyenv. We can download it in https://github.com/pyenv/pyenv/releases. At present, the latest version is v1.2.4. Please download the "Source code(zip)".And then install it. The command you might use is:
 #"cd" to get into download folder
+
 $unzip pyenv-1.2.4.zip
 
 $mv pyenv-1.2.4 ~/.pyenv
@@ -47,6 +48,7 @@ $echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 $source ~/.bashrc
 
 - Install and setup Anaconda 4.3.0(here we only utilize the "conda" command instead the python or spyder inside)
+
 $pyenv install anaconda3-4.3.0
 
 $pyenv rehash
@@ -87,16 +89,18 @@ $hello = tf.constant('Hello, TensorFlow!')
 $sess = tf.Session()
 
 $print(sess.run(hello))
-
 #If you can see the text 'Hello, TensorFlow!', it means you complete the installation successfully. Then press Ctrl+D to exit python. And finally exit virtual tensorflow environment by:
+
 $source deactivate
 
 - Beware that to run a source coding using tensorflow module, you need:
+
 $source activate tensorflow #go into the virtual environment
 
 $python XXXX.py #run your code file here
 
 - (option)Also beware that you are not in the environment of anaconda&spyder. Many libraries are not installed in this environment. You need add them manually in the way like this:
+
 $source activate tensorflow
 
 $conda install -c anaconda numpy=1.12.1
@@ -161,8 +165,6 @@ $tar xzfv ~/download/open_jtalk_dic_utf_8-1.10.tar.gz
 $mv open_jtalk_dic_utf_8-1.10 /usr/local/share/open_jtalk_dic
 
 #Now the setup for all of three parts has be done. 
-
-
 
 
 =======================================================================================
