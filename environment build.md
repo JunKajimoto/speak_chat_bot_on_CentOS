@@ -13,7 +13,7 @@ Here are the tools I need at least:
 ------------------------------
 - OpenJTalk(HTS engine, voice model, voice source, dictionary files)
 
-I divided these in to three parts(OS,Python,synthesis engine). Thus the manual consists of three parts.  I'd like to share the experience of installing the corresponding tools.
+I divided these in to three parts(OS,Python,synthesis engine). Thus the manual consists of three parts. I'd like to share the experience of installing the corresponding tools.
 
 ## Part 1 CentOS installation
 
@@ -46,7 +46,7 @@ $echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 
 $source ~/.bashrc
 
-- Install and setup Anaconda 4.3.0(here we only utilize the "conda" command not the python neither spyder...)
+- Install and setup Anaconda 4.3.0(here we only utilize the "conda" command instead the python or spyder inside)
 $pyenv install anaconda3-4.3.0
 
 $pyenv rehash
